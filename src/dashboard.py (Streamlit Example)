@@ -1,0 +1,9 @@
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+
+df = pd.read_csv('processed/cleaned_data.csv')
+st.title('Threat Analytics Dashboard')
+st.write('## Top Threat Sources by Country')
+fig = px.bar(df['country'].value_counts().reset_index(), x='index', y='country')
+st.plotly_chart(fig)
