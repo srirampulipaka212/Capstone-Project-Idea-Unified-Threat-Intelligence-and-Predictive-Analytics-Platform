@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn
+lightgbm
+tensorflow
+matplotlib
+seaborn
+plotly
+dash
+streamlit
+python-geoip-geolite2
+joblib
